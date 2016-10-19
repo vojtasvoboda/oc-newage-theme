@@ -7,10 +7,11 @@ Template created by [Start Bootstrap](https://startbootstrap.com/template-overvi
 ## Features
 
 - Fully responsive
-- Easy to use HTML5/CSS Device mockups, just drop in content, no Photoshop or image editing necessary!
-- Custom fixed navigation menu with scrolling animations
-- LESS files included for deeper customization options
+- Complete content management
+- You can enable/disable all sections
+- Separated feature list management
 - Semantic markup with nav, sections, and asides
+- Font Awesome and Simple Line Icons included
 
 ## Contributing
 
