@@ -2,11 +2,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h2 class="section-heading">Discover what all the buzz is about!</h2>
-                <p>Our app is available on any mobile device! Download now to get started!</p>
+                <h2 class="section-heading">{{ this.theme.download_headline | raw }}</h2>
+                {{ this.theme.download_content | raw }}
                 <div class="badges">
-                    <a class="badge-link" href="#"><img src="{{ 'assets/img/google-play-badge.svg' | theme }}" alt=""></a>
-                    <a class="badge-link" href="#"><img src="{{ 'assets/img/app-store-badge.svg' | theme }}" alt=""></a>
+                    {% if this.theme.download_google_link %}
+                    <a class="badge-link" href="{{ this.theme.download_google_link }}">
+                        <img src="{{ 'assets/img/google-play-badge.svg' | theme }}" alt="Google Play link">
+                    </a>
+                    {% endif %}
+                    {% if this.theme.download_appstore_link %}
+                    <a class="badge-link" href="#">
+                        <img src="{{ 'assets/img/app-store-badge.svg' | theme }}" alt="App Store link">
+                    </a>
+                    {% endif %}
                 </div>
             </div>
         </div>

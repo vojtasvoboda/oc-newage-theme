@@ -3,7 +3,22 @@ url = "/"
 layout = "sections"
 is_hidden = 0
 ==
-
 {% if this.theme.intro_headline %}
     {% partial 'sections/intro' %}
+{% endif %}
+
+{% if this.theme.download_headline %}
+    {% partial 'sections/download' %}
+{% endif %}
+
+{% if this.theme.features_headline %}
+    {% partial 'sections/features' %}
+{% endif %}
+
+{% if this.theme.cta_headline %}
+    {% partial 'sections/cta' %}
+{% endif %}
+
+{% if this.theme.contact_headline %}
+    {% partial 'sections/contact' %}
 {% endif %}

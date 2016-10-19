@@ -1,16 +1,22 @@
 <section id="contact" class="contact bg-primary">
     <div class="container">
-        <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+        <h2>{{ this.theme.contact_headline | raw }}</h2>
         <ul class="list-inline list-social">
+            {% if this.theme.contact_twitter %}
             <li class="social-twitter">
-                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="{{ this.theme.contact_twitter }}"><i class="fa fa-twitter"></i></a>
             </li>
+            {% endif %}
+            {% if this.theme.contact_facebook %}
             <li class="social-facebook">
-                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="{{ this.theme.contact_facebook }}"><i class="fa fa-facebook"></i></a>
             </li>
+            {% endif %}
+            {% if this.theme.contact_google %}
             <li class="social-google-plus">
-                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="{{ this.theme.contact_google }}"><i class="fa fa-google-plus"></i></a>
             </li>
+            {% endif %}
         </ul>
     </div>
 </section>

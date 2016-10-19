@@ -1,8 +1,10 @@
 <section class="cta">
     <div class="cta-content">
         <div class="container">
-            <h2>Stop waiting.<br>Start building.</h2>
-            <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+            <h2>{{ this.theme.cta_headline | raw }}</h2>
+            <a href="{{ this.theme.cta_button_link }}" class="btn btn-outline btn-xl page-scroll">
+                {{ this.theme.cta_button }}
+            </a>
         </div>
     </div>
     <div class="overlay"></div>

@@ -11,6 +11,7 @@ tabs:
             label: Locale
             type: text
             default: en
+
         intro_enabled:
             tab: Intro
             label: Enabled
@@ -19,7 +20,7 @@ tabs:
         intro_headline:
             tab: Intro
             label: Headline
-            type: textarea
+            type: text
             default: New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!
         intro_button:
             tab: Intro
@@ -31,3 +32,110 @@ tabs:
             label: Button link
             type: text
             default: "#downloads"
+
+        download_enabled:
+            tab: Download
+            label: Enabled
+            type: switch
+            deafult: true
+        download_headline:
+            tab: Download
+            label: Headline
+            type: text
+            default: Discover what all the buzz is about!
+        download_content:
+            tab: Download
+            label: Content
+            type: richeditor
+            default: "<p>Our app is available on any mobile device! Download now to get started!</p>"
+        download_google_link:
+            tab: Download
+            label: Google Play link
+            type: text
+            default: https://play.google.com
+            comment: Leave empty for disable icon
+        download_appstore_link:
+            tab: Download
+            label: App Store link
+            type: text
+            default: https://appstore.com
+            comment: Leave empty for disable icon
+
+        features_enabled:
+            tab: Features
+            label: Enabled
+            type: switch
+            deafult: true
+        features_headline:
+            tab: Features
+            label: Headline
+            type: text
+            default: "Unlimited Features, Unlimited Fun"
+        features_subheadline:
+            tab: Features
+            label: Subheadline
+            type: text
+            default: "Check out what you can do with this app theme!"
+        features_list:
+            type: repeater
+            form:
+                fields:
+                    icon:
+                        label: Icon
+                        type: text
+                    name:
+                        label: Name
+                        type: text
+                    text:
+                        label: Text
+                        type: text
+
+        cta_enabled:
+            tab: CTA
+            label: Enabled
+            type: switch
+            deafult: true
+        cta_headline:
+            tab: CTA
+            label: Headline
+            type: text
+            default: "Stop waiting.<br>Start building."
+        cta_button:
+            tab: CTA
+            label: Button
+            type: text
+            default: "Let's Get Started!"
+        cta_button_link:
+            tab: CTA
+            label: Button link
+            type: text
+            default: "#contact"
+
+        contact_enabled:
+            tab: Contact
+            label: Enabled
+            type: switch
+            deafult: true
+        contact_headline:
+            tab: Contact
+            label: Headline
+            type: text
+            default: 'We <i class="fa fa-heart"></i> new friends!'
+        contact_twitter:
+            tab: Contact
+            label: Twitter link
+            type: text
+            default: https://twitter.com
+            comment: Leave empty for disable icon
+        contact_facebook:
+            tab: Contact
+            label: Facebook link
+            type: text
+            default: https://facebook.com
+            comment: Leave empty for disable icon
+        contact_google:
+            tab: Contact
+            label: Google Plus link
+            type: text
+            default: https://plus.google.com
+            comment: Leave empty for disable icon
