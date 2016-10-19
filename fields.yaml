@@ -1,0 +1,7 @@
+tabs:
+    fields:
+        website_name:
+            tab: Basic
+            label: Website Name
+            type: text
+            default: My new websites

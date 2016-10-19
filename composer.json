@@ -1,0 +1,23 @@
+{
+    "name": "vojtasvoboda/oc-newage-theme",
+    "type": "october-theme",
+    "description": "New Age theme for OctoberCMS",
+    "keywords": ["newage", "startbootstrap", "theme"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vojta Svoboda",
+            "email": "vojtasvoboda.cz@gmail.com",
+            "role": "Webdeveloper"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

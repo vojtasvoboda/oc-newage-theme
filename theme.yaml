@@ -1,0 +1,6 @@
+name: 'New Age'
+description: 'New Age landing page theme'
+author: 'Vojta Svoboda'
+homepage: 'http://www.vojtasvoboda.cz'
+code: newage
+form: fields.yaml
