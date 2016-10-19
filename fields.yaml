@@ -17,9 +17,14 @@ tabs:
             label: Footer
             type: text
             default: "© 2016 My new websites. All Rights Reserved."
+        menu_transparent:
+            tab: General
+            label: Transparent main menu
+            type: switch
+            default: true
         footer_menu:
             tab: General
-            label: Show footer menu?
+            label: Visible footer menu
             type: switch
             default: true
 

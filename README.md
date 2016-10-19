@@ -16,6 +16,12 @@ Template created by [Start Bootstrap](https://startbootstrap.com/template-overvi
 
 **Feel free to send pullrequest!** Please send pull request to master branch.
 
+## Future plans
+
+- [ ] add favicon
+- [ ] checkbox and styles for non-fixed main menu
+- [ ] prepare blank page for FAQs or other stuff
+
 ## Copyright and License
 
 OctoberCMS theme: Copyright 2016 Vojta Svoboda. Code released under the [MIT](https://github.com/vojtasvoboda/oc-newage-theme/blob/master/LICENSE) license.

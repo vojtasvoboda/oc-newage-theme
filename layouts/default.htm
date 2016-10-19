@@ -8,7 +8,7 @@ description = "Default layout"
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ this.page.description }}">
 
-    <title>{{ this.theme.site_title }}</title>
+    <title>{% if this.page.title %}{{ this.page.title}} &#124; {% endif %}{{ this.theme.site_title }}</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ 'assets/vendor/bootstrap/css/bootstrap.min.css' | theme }}" rel="stylesheet">
