@@ -3,4 +3,7 @@ url = "/"
 layout = "sections"
 is_hidden = 0
 ==
-{% partial 'sections/intro' %}
+
+{% if this.theme.intro_headline %}
+    {% partial 'sections/intro' %}
+{% endif %}

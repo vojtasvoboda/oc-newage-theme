@@ -1,7 +1,33 @@
 tabs:
     fields:
-        website_name:
-            tab: Basic
-            label: Website Name
+        site_title:
+            tab: General
+            label: Title
             type: text
             default: My new websites
+            comment: Used at site title
+        site_locale:
+            tab: General
+            label: Locale
+            type: text
+            default: en
+        intro_enabled:
+            tab: Intro
+            label: Enabled
+            type: switch
+            deafult: true
+        intro_headline:
+            tab: Intro
+            label: Headline
+            type: textarea
+            default: New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!
+        intro_button:
+            tab: Intro
+            label: Button
+            type: text
+            default: Start Now for Free!
+        intro_button_link:
+            tab: Intro
+            label: Button link
+            type: text
+            default: "#downloads"
