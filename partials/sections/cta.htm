@@ -2,9 +2,11 @@
     <div class="cta-content">
         <div class="container">
             <h2>{{ this.theme.cta_headline | raw }}</h2>
+            {% if this.theme.cta_button_link %}
             <a href="{{ this.theme.cta_button_link }}" class="btn btn-outline btn-xl page-scroll">
                 {{ this.theme.cta_button }}
             </a>
+            {% endif %}
         </div>
     </div>
     <div class="overlay"></div>

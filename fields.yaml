@@ -11,33 +11,55 @@ tabs:
             label: Locale
             type: text
             default: en
+            comment: Used for HTML lang parameter
+        footer:
+            tab: General
+            label: Footer
+            type: text
+            default: "© 2016 My new websites. All Rights Reserved."
+        footer_menu:
+            tab: General
+            label: Show footer menu?
+            type: switch
+            default: true
 
         intro_enabled:
             tab: Intro
             label: Enabled
             type: switch
-            deafult: true
+            default: true
         intro_headline:
             tab: Intro
             label: Headline
             type: text
-            default: New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!
+            default: "New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!"
         intro_button:
             tab: Intro
             label: Button
             type: text
             default: Start Now for Free!
+            span: left
         intro_button_link:
             tab: Intro
             label: Button link
             type: text
-            default: "#downloads"
+            default: "#download"
+            span: right
+            comment: Leave empty for hiding button
+        intro_img:
+            tab: Intro
+            label: Image
+            comment: Please aspect ratio 0,5625 (e.g. 621 x 1104)
+            type: fileupload
+            mode: image
+            imageWidth: 310
+            imageHeight: 552
 
         download_enabled:
             tab: Download
             label: Enabled
             type: switch
-            deafult: true
+            default: true
         download_headline:
             tab: Download
             label: Headline
@@ -52,20 +74,22 @@ tabs:
             tab: Download
             label: Google Play link
             type: text
+            span: left
             default: https://play.google.com
-            comment: Leave empty for disable icon
+            comment: Leave empty for hide icon
         download_appstore_link:
             tab: Download
             label: App Store link
             type: text
+            span: right
             default: https://appstore.com
-            comment: Leave empty for disable icon
+            comment: Leave empty for hide icon
 
         features_enabled:
             tab: Features
             label: Enabled
             type: switch
-            deafult: true
+            default: true
         features_headline:
             tab: Features
             label: Headline
@@ -76,25 +100,40 @@ tabs:
             label: Subheadline
             type: text
             default: "Check out what you can do with this app theme!"
+        features_img:
+            tab: Features
+            label: Image
+            comment: Please aspect ratio 0,5625 (e.g. 621 x 1104)
+            type: fileupload
+            mode: image
+            imageWidth: 310
+            imageHeight: 552
         features_list:
+            tab: Features List
+            label: Features
             type: repeater
             form:
                 fields:
-                    icon:
-                        label: Icon
-                        type: text
                     name:
                         label: Name
                         type: text
+                        span: left
+                        comment: Feature name
+                    icon:
+                        label: Icon
+                        type: text
+                        span: right
+                        comment: See http://fontawesome.io/icons/
                     text:
                         label: Text
                         type: text
+                        span: full
 
         cta_enabled:
             tab: CTA
             label: Enabled
             type: switch
-            deafult: true
+            default: true
         cta_headline:
             tab: CTA
             label: Headline
@@ -104,18 +143,21 @@ tabs:
             tab: CTA
             label: Button
             type: text
+            span: left
             default: "Let's Get Started!"
         cta_button_link:
             tab: CTA
             label: Button link
             type: text
+            span: right
             default: "#contact"
+            comment: Leave empty for hiding button
 
         contact_enabled:
             tab: Contact
             label: Enabled
             type: switch
-            deafult: true
+            default: true
         contact_headline:
             tab: Contact
             label: Headline
@@ -125,17 +167,25 @@ tabs:
             tab: Contact
             label: Twitter link
             type: text
+            span: left
             default: https://twitter.com
-            comment: Leave empty for disable icon
+            comment: Leave empty for hide icon
         contact_facebook:
             tab: Contact
             label: Facebook link
             type: text
+            span: right
             default: https://facebook.com
-            comment: Leave empty for disable icon
+            comment: Leave empty for hide icon
         contact_google:
             tab: Contact
             label: Google Plus link
             type: text
+            span: left
             default: https://plus.google.com
-            comment: Leave empty for disable icon
+            comment: Leave empty for hide icon
+        contact_content:
+            tab: Contact
+            label: Content
+            type: richeditor
+            default:

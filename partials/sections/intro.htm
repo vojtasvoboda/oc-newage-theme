@@ -4,8 +4,10 @@
             <div class="col-sm-7">
                 <div class="header-content">
                     <div class="header-content-inner">
-                        <h1>{{ this.theme.intro_headline }}</h1>
+                        <h1>{{ this.theme.intro_headline | raw }}</h1>
+                        {% if this.theme.intro_button_link %}
                         <a href="{{ this.theme.intro_button_link }}" class="btn btn-outline btn-xl page-scroll">{{ this.theme.intro_button }}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -15,11 +17,15 @@
                         <div class="device">
                             <div class="screen">
                                 <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                <img src="{{ 'assets/img/demo-screen-1.jpg' | theme }}" class="img-responsive" alt="">
+                                {% if this.theme.intro_img %}
+                                <img src="{{ this.theme.intro_img.getThumb(621, 1104, 'crop') }}" class="img-responsive" alt="{{ this.theme.site_title }}" />
+                                {% else %}
+                                <img src="{{ 'assets/img/demo-screen-1.jpg' | theme }}" class="img-responsive" alt="{{ this.theme.site_title }}" />
+                                {% endif %}
                             </div>
-                            <div class="button">
-                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                            </div>
+                            <!-- // You can hook the "home button" to some JavaScript events or just remove it
+                            <div class="button"></div>
+                            -->
                         </div>
                     </div>
                 </div>

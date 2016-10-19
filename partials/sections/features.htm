@@ -16,17 +16,26 @@
                         <div class="device">
                             <div class="screen">
                                 <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                <img src="{{ 'assets/img/demo-screen-1.jpg' | theme }}" class="img-responsive" alt=""> </div>
-                            <div class="button">
-                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                {% if this.theme.features_img %}
+                                <img src="{{ this.theme.features_img.getThumb(621, 1104, 'crop') }}" class="img-responsive" alt="{{ this.theme.site_title }} features" />
+                                {% else %}
+                                <img src="{{ 'assets/img/demo-screen-1.jpg' | theme }}" class="img-responsive" alt="{{ this.theme.site_title }} features" />
+                                {% endif %}
                             </div>
+                            <!-- // You can hook the "home button" to some JavaScript events or just remove it
+                            <div class="button"></div>
+                            -->
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-8">
                 <div class="container-fluid">
-                    {% partial 'dummy/features' %}
+                    {% if this.theme.features_list %}
+                        {% partial 'features/items' %}
+                    {% else %}
+                        {% partial 'features/dummy' %}
+                    {% endif %}
                 </div>
             </div>
         </div>

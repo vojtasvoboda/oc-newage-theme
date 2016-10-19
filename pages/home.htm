@@ -3,22 +3,22 @@ url = "/"
 layout = "sections"
 is_hidden = 0
 ==
-{% if this.theme.intro_headline %}
+{% if this.theme.intro_enabled %}
     {% partial 'sections/intro' %}
 {% endif %}
 
-{% if this.theme.download_headline %}
+{% if this.theme.download_enabled %}
     {% partial 'sections/download' %}
 {% endif %}
 
-{% if this.theme.features_headline %}
+{% if this.theme.features_enabled %}
     {% partial 'sections/features' %}
 {% endif %}
 
-{% if this.theme.cta_headline %}
+{% if this.theme.cta_enabled %}
     {% partial 'sections/cta' %}
 {% endif %}
 
-{% if this.theme.contact_headline %}
+{% if this.theme.contact_enabled %}
     {% partial 'sections/contact' %}
 {% endif %}
