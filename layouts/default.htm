@@ -25,6 +25,7 @@ description = "Default layout"
 
     <!-- Theme CSS -->
     <link href="{{ 'assets/css/new-age.min.css' | theme }}" rel="stylesheet">
+    {% styles %}
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,6 +46,7 @@ description = "Default layout"
 <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.min.js' | theme }}"></script>
 <script src="{{ 'assets/js/jquery.easing.min.js' | theme }}"></script>
 <script src="{{ 'assets/js/new-age.min.js' | theme }}"></script>
+{% scripts %}
 
 </body>
 </html>
