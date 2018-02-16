@@ -1,8 +1,10 @@
-<section id="download" class="download bg-primary text-center">
+<section class="download bg-primary text-center" id="download">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h2 class="section-heading">{{ this.theme.download_headline | raw }}</h2>
+            <div class="col-md-8 mx-auto">
+                <h2 class="section-heading">
+                    {{ this.theme.download_headline | raw }}
+                </h2>
                 {{ this.theme.download_content | raw }}
                 <div class="badges">
                     {% if this.theme.download_google_link %}

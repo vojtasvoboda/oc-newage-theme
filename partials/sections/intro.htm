@@ -1,26 +1,26 @@
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7">
-                <div class="header-content">
-                    <div class="header-content-inner">
-                        <h1>{{ this.theme.intro_headline | raw }}</h1>
-                        {% if this.theme.intro_button_link %}
-                        <a href="{{ this.theme.intro_button_link }}" class="btn btn-outline btn-xl page-scroll">{{ this.theme.intro_button }}</a>
-                        {% endif %}
-                    </div>
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-lg-7 my-auto">
+                <div class="header-content mx-auto">
+                    <h1 class="mb-5">{{ this.theme.intro_headline | raw }}</h1>
+                    {% if this.theme.intro_button_link %}
+                    <a href="{{ this.theme.intro_button_link }}" class="btn btn-outline btn-xl js-scroll-trigger">
+                        {{ this.theme.intro_button }}
+                    </a>
+                    {% endif %}
                 </div>
             </div>
-            <div class="col-sm-5">
+            <div class="col-lg-5 my-auto">
                 <div class="device-container">
                     <div class="device-mockup iphone6_plus portrait white">
                         <div class="device">
                             <div class="screen">
-                                <!-- You can put an image here, some HTML, an animation, video, or anything else! -->
+                                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
                                 {% if this.theme.intro_img %}
-                                <img src="{{ this.theme.intro_img.getThumb(621, 1104, 'crop') }}" class="img-responsive" alt="{{ this.theme.site_title }}" />
+                                <img src="{{ this.theme.intro_img.getThumb(621, 1104, 'crop') }}" class="img-fluid" alt="{{ this.theme.site_title }}" />
                                 {% else %}
-                                <img src="{{ 'assets/img/demo-screen-1.jpg' | theme }}" class="img-responsive" alt="{{ this.theme.site_title }}" />
+                                <img src="{{ 'assets/img/demo-screen-1.jpg' | theme }}" class="img-fluid" alt="{{ this.theme.site_title }}" />
                                 {% endif %}
                             </div>
                             <!-- // You can hook the "home button" to some JavaScript events or just remove it
