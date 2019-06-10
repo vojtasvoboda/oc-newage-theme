@@ -2,5 +2,5 @@ name: 'New Age'
 description: 'New Age landing page theme'
 author: 'Vojta Svoboda'
 homepage: 'https://www.vojtasvoboda.cz'
-code: 'NewAge'
+code: 'newage'
 form: fields.yaml
